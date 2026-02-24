@@ -1,69 +1,69 @@
-/* ===== FIXED IMAGE PATHS FOR GITHUB PAGES ===== */
-
-/* background placeholders */
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  background: linear-gradient(135deg, #d7e3ff, #1b45f4);
+/* ===============================
+   GLOBAL RESET (SAFE)
+================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* grain overlay */
-.grain-overlay {
-  pointer-events: none;
-  position: fixed;
-  inset: 0;
-  z-index: 50;
-  opacity: 0.04;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-}
+/* ===============================
+   IMAGE FIX — IMPORTANT PART
+   (THIS IS WHAT WAS BROKEN)
+================================ */
 
-/* hero / cards images */
-.hero-robot {
-  background-image: url("./vista-robot.png");
+/* Robot image */
+.vista-robot {
+  background-image: url("https://ary888and.github.io/VistawealthAI/assets/vista-robot.png") !important;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.arjun-photo {
-  background-image: url("./arjun-photo.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.riya-photo {
-  background-image: url("./riya-photo.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.empty-wallet {
-  background-image: url("./empty-wallet.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.future-kid {
-  background-image: url("./future-kid.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.vista-thinking {
-  background-image: url("./vista-thinking.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
+/* Superhero image */
 .vista-superhero {
-  background-image: url("./vista-superhero.png");
+  background-image: url("https://ary888and.github.io/VistawealthAI/assets/vista-superhero.png") !important;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* ===== KEEP EVERYTHING ELSE AS-IS (TAILWIND BUILD OUTPUT) ===== */
+/* Thinking image */
+.vista-thinking {
+  background-image: url("https://ary888and.github.io/VistawealthAI/assets/vista-thinking.png") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-/* NOTHING BELOW THIS WAS TOUCHED */
+/* Arjun photo */
+.arjun-photo {
+  background-image: url("https://ary888and.github.io/VistawealthAI/assets/arjun-photo.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Riya photo */
+.riya-photo {
+  background-image: url("https://ary888and.github.io/VistawealthAI/assets/riya-photo.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Empty wallet */
+.empty-wallet {
+  background-image: url("https://ary888and.github.io/VistawealthAI/assets/empty-wallet.jpg") !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Future kid */
+.future-kid {
+  background-image: url("https://ary888and.github.io/VistawealthAI/assets/future-kid.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
